@@ -19,6 +19,6 @@ public class GameModel {
     private String hora;
 
     @ManyToMany
-    private List<Usuario> jugadores;
+    private List<UsersModel> jugadores;
 }
 
