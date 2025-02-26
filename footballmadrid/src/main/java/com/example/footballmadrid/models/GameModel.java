@@ -15,8 +15,8 @@ public class GameModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private LocalDate fecha;
-    private String hora;
+    private LocalDate date;
+    private String hour;
 
     public Long getId() {
         return id;
@@ -26,21 +26,20 @@ public class GameModel {
         this.id = id;
     }
 
-    public LocalDate getFecha() {
-        return fecha;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setFecha(LocalDate fecha) {
-        this.fecha = fecha;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
-    public String getHora() {
-        return hora;
+    public String getHour() {
+        return hour;
     }
 
-    public void setHora(String hora) {
-        this.hora = hora;
+    public void setHour(String hora) {
+        this.hour = hour;
     }
-//private List<UsersModel> jugadores;
 }
 
