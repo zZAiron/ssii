@@ -14,9 +14,35 @@ public class PitchModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nombre;
-    private String ubicacion;
+    private String names;
+    private String location;
 
-    @OneToMany(mappedBy = "pitch")
-    private List<Partido> partidos;
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNames() {
+        return names;
+    }
+
+    public void setNames(String names) {
+        this.names = names;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+/*
+    @OneToMany(mappedBy = "pitchModel")
+    private List<GameModel> games;
+*/
 }
+

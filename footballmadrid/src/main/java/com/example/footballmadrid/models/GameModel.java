@@ -18,7 +18,29 @@ public class GameModel {
     private LocalDate fecha;
     private String hora;
 
-    @ManyToMany
-    private List<UsersModel> jugadores;
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public LocalDate getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getHora() {
+        return hora;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
+//private List<UsersModel> jugadores;
 }
 
